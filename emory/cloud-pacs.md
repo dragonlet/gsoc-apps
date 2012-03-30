@@ -5,7 +5,7 @@ Basics
 ------
 
   - Name: Clarence Leung
-  - E-mail: clarence.leung@mail.mcgill.ca
+  - E-mail: [clarence.leung@mail.mcgill.ca](mailto:clarence.leung@mail.mcgill.ca)
 
 Project Description
 -------------------
@@ -76,11 +76,11 @@ Qualifications
 
 I am a second-year Biology and Computer Science undergraduate student at McGill University with experience deploying non-relational databases (particularly MongoDB and Redis) for professional and organizational use.  I have worked as a lead developer on the following research and open-source projects, particularly playing a large role in scalability and deployment:
 
-  - Wikinotes - beta.wikinotes.ca - A Django-based collaborative learning site for students at McGill University
-  - Phylo - phylo.cs.mcgill.ca - A crowdsourced Flash game for sequencing phylogenetic data
-  - Phylo-MCMC - github.com/clarle/phylo-mcmc - MCMC algorithms for predicting genetic sequences (unrelated to the above Phylo)
-  - Sunlight Labs API - services.sunlightlabs.com - A Node.js client library for the government data APIs of Sunlight Labs
-  - Django Slides - github.com/clarle/django-slides - A Django-based application for easily integrating JavaScript slideshows into Django projects
+  - [Wikinotes](beta.wikinotes.ca) A Django-based collaborative learning site for students at McGill University
+  - [Phylo](phylo.cs.mcgill.ca) - A crowdsourced Flash game for sequencing phylogenetic data
+  - [Phylo-MCMC](github.com/clarle/phylo-mcmc) - MCMC algorithms for predicting genetic sequences (unrelated to the above Phylo)
+  - [Sunlight Labs API](services.sunlightlabs.com) - A Node.js client library for the government data APIs of Sunlight Labs
+  - [Django Slides](github.com/clarle/django-slides) - A Django-based application for easily integrating JavaScript slideshows into Django projects
 
 I am also a consistent partcipant in Montreal hackathons, and have won the Back-To-School Hackathon (with Wikinotes) and Hacking Health (with TextRX).
 
