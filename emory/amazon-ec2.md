@@ -10,7 +10,7 @@ Basics
 Project Description
 -------------------
 
-The goal of this project is to provide a simple interface in which users that wish to initialize an Amazon EC2 instance for Imaging Middleware applications, given particular parameters, can do so in a simple JSON-template based manner, or through some external client.  Parameters to consider for the template include the name of the instance, type of the instance, scripts to run on startup, DNS settings, and more.  
+The goal of this project is to provide a simple interface in which users that wish to initialize an Amazon EC2 instance for Imaging Middleware applications, given particular parameters, can do so in a simple JSON-template based manner, or through some external client.  Parameters to consider for the template include the name of the instance, type of the instance, scripts to run on startup, DNS settings, and more.
 
 This project will be separated into three major parts, a Python-based general CLI client, an Eclipse plugin to simplify template entry, and a web interface.
 
