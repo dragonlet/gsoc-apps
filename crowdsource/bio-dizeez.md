@@ -4,46 +4,60 @@ Biological Games: Asymmetric Version of Dizeez
 Biography
 ---------
 
-  - Name: Clarence Leung
+  - Name: 
+       * Clarence Leung
   
-  - E-mail: [clarence.leung@mail.mcgill.ca](mailto:clarence.leung@mail.mcgill.ca)
+  - E-mail: 
+       * [clarence.leung@mail.mcgill.ca](mailto:clarence.leung@mail.mcgill.ca)
 
   - Education:
       * B.Sc. Joint Biology and Computer Science
       * McGill University, Montreal, QC, Canada
 
-  - Links to describe me: 
-      * [GitHub](http://github.com/clarle)
-      * [Google+](https://plus.google.com/114176550515061560911/)
-      * [Facebook](http://www.facebook.com/clarle)
- 
-  - List of programming languages used:
-      * Python (Advanced)
-          + Specializations: NumPy/SciPy, Cython, Django
-      * JavaScript (Advanced)
-          + Specializations: jQuery, d3.js, node.js
-      * C (Intermediate)
-          + Specializations: Python/node.js modules and bindings
-      * Bash (Intermediate)
-      * Java (Intermediate)
-      * Scala (Beginner)
- 
-  - Interests:
-   I have two major interests as a coder, bioinformatics and web development.
-   My specializations in the two fields are as follows:
-      * Bioinformatics
-          + Phylogenetic sequencing
-          + Machine learning predictions
-      * Web development
-          + REST API design
-          + Distributed computing and database scaling
-          + User experience
- 
-  - Goals for the summer:
-   I hope to learn to design and implement more responsive client-side interfaces, that make users not notice the difference between a web application and a regular desktop-based application.  As well, I am interested in learning more about current difficult problems in biology, and how crowdsourcing may be able to provide better solutions than algorithmic techniques in some cases.
+Internet Presence
+-----------------
 
-  - Other commitments this summer:
-  I was a lead developer on Phylo: A Human Computing Framework for Comparative Genomics last summer, one of the more well-known crowdsourced biological games.  I will likely take an advisory role this summer to help the new developers, which is currently my only commitment.  Other than that, I can work on the Google Summer of Code project full-time.
+  - [GitHub](http://github.com/clarle)
+  - [Google+](https://plus.google.com/114176550515061560911/)
+  - [Facebook](http://www.facebook.com/clarle)
+
+
+Known Programming Languages
+---------------------------
+
+  - Python (Advanced)
+    * Specializations: NumPy/SciPy, Cython, Django
+  - JavaScript (Advanced)
+    * Specializations: jQuery, d3.js, node.js
+  - C (Intermediate)
+    * Specializations: Python/node.js modules and bindings
+  - Bash (Intermediate)
+  - Java (Intermediate)
+  - Scala (Beginner)
+ 
+Interests
+---------
+
+I have two major interests as a coder, bioinformatics and web development.
+My specializations in the two fields are as follows:
+  
+  - Bioinformatics
+    * Phylogenetic sequencing
+    * Machine learning predictions
+  - Web development
+    * REST API design
+    * Distributed computing and database scaling
+    * User experience
+ 
+Goals for the summer
+--------------------
+
+I hope to learn to design and implement more responsive client-side interfaces, that make users not notice the difference between a web application and a regular desktop-based application.  As well, I am interested in learning more about current difficult problems in biology, and how crowdsourcing may be able to provide better solutions than algorithmic techniques in some cases.
+
+Other commitments this summer
+-----------------------------
+
+I was a lead developer on Phylo: A Human Computing Framework for Comparative Genomics last summer, one of the more well-known crowdsourced biological games.  I will likely take an advisory role this summer to help the new developers, which is currently my only commitment.  Other than that, I can work on the Google Summer of Code project full-time.
 
 Project Plan
 ------------
@@ -62,7 +76,7 @@ Once a challenge begins, each player is randomly assigned a role.  If a player i
 
 A database is necessary to keep persistent data such as this, and a standard choice such as MySQL is fine.  Users must create user accounts, which store their username, a hashed password, their current Dizeez score, and other information inside the database.  A sample JSON object that encapsulates the user data could be:
 
-`
+'
 {  
   id: "Integer: User ID number",
   name: "String: Desired username of the user",
@@ -71,11 +85,11 @@ A database is necessary to keep persistent data such as this, and a standard cho
   games_played: "Integer: Total number of games played",
   points: "Integer: Total number of Dizeez points"
 }
-`
+'
    
 To keep track of the games, we can keep track of the data for each game inside the database as well.  A sample JSON object that encapsulates the game data could be:
 
-`
+'
 {
   id: "Integer: Game ID number",
   round: "Integer: Round number of the game",
@@ -86,7 +100,7 @@ To keep track of the games, we can keep track of the data for each game inside t
   genes: "Array(String): List of genes that the namer has chosen",
   complete: "Boolean: True/False value as to whether the game has finished"
 }
-`
+'
 
 These are the bare minimum parameters that are needed to build our game.  We switch around the namer and guesser parameters at each round.  This JSON data can be sent to the players and used to construct our views for the actual interface.
 
@@ -99,21 +113,29 @@ Timeline
 
 The timeline for Google Summer of Code is from April 20 to August 20.  The following calendar is proposed as a guideline for the project.
 
-* April 20 - April 27: Get to know the existing Dizeez code, and design and develop unit test cases for the project to come.
+  - April 20 - April 27: 
+    * Get to know the existing Dizeez code, and design and develop unit test cases for the project to come.
 
-* April 28 - May 5: Design and setup the MySQL database for persistent data.  Any system administration tasks to prepare the development/production environment should be done in this time.
+  - April 28 - May 5: 
+    * Design and setup the MySQL database for persistent data.  Any system administration tasks to prepare the development/production environment should be done in this time.
 
-* May 6 - May 27: Develop the REST-based server for the backend, to transmit the JSON data that will be passed from server to client.
+  - May 6 - May 27: 
+    * Develop the REST-based server for the backend, to transmit the JSON data that will be passed from server to client.
 
-* May 28 - June 10: Begin developing the HTML/CSS/JS game client.  Game browsing should be complete at the end of this timeframe.
+  - May 28 - June 10: 
+    * Begin developing the HTML/CSS/JS game client.  Game browsing should be complete at the end of this timeframe.
 
-* June 11 - July 1: Continue development on the HTML/CSS/JS game client.  The actual gameplay should be complete at the end of this timeframe.
+  - June 11 - July 1: 
+    * Continue development on the HTML/CSS/JS game client.  The actual gameplay should be complete at the end of this timeframe.
 
-* July 2 - July 22: Begin testing of all aspects of the game.  Certain portions of the game should be available for beta testing at this point.
+  - July 2 - July 22: 
+    * Begin testing of all aspects of the game.  Certain portions of the game should be available for beta testing at this point.
 
-* July 23 - July 30: Setup mail server, application proxies, and any other production necessary steps for actual launch of the game.
+  - July 23 - July 30: 
+    * Setup mail server, application proxies, and any other production necessary steps for actual launch of the game.
 
-* August 1 - August 20: Deploy the game for playing, and fix any bugs that users may detect in the meantime.
+  - August 1 - August 20: 
+    * Deploy the game for playing, and fix any bugs that users may detect in the meantime.
 
 Qualifications
 --------------
